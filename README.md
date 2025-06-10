@@ -23,4 +23,4 @@ I'm a Technical Writing Manager with over 12 years of experience creating clear,
 
 ## Contact
 - Email: your.email@example.com  
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- LinkedIn: [My LinkedIn](www.linkedin.com/in/achal-abhishek-b3748031)
