@@ -22,5 +22,5 @@ I'm a Technical Writing Manager with over 12 years of experience creating clear,
 - Feedback-driven continuous improvement
 
 ## Contact
-- Email: your.email@example.com  
-- LinkedIn: [My LinkedIn](www.linkedin.com/in/achal-abhishek-b3748031)
+- Email: achal.abhishek4007@gmail.com  
+- LinkedIn: [My LinkedIn](https//linkedin.com/in/achal-abhishek-b3748031)
