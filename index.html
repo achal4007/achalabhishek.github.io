@@ -6,6 +6,15 @@
   <title>Achal Abhishek – Technical Writer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("toggle-theme");
+      const body = document.body;
+      toggle.addEventListener("click", () => {
+        body.classList.toggle("dark");
+      });
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -19,6 +28,7 @@
         <li><a href="#publications">Publications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button id="toggle-theme" class="toggle-theme">🌓</button>
     </nav>
   </header>
 
@@ -39,17 +49,14 @@
 
   <section id="projects">
     <h2>Projects & Achievements</h2>
-
     <div class="card">
       <h3>Help Center Revamp – Subex</h3>
       <p>Led the revamp of telecom product help guides using RoboHelp and Git, reducing support tickets by 30%.</p>
     </div>
-
     <div class="card">
       <h3>Hypersense AI Documentation</h3>
       <p>Created end-to-end user guides for AI modules, improving onboarding efficiency across teams.</p>
     </div>
-
     <div class="card">
       <h3>Partner Settlement Docs</h3>
       <p>Developed clear documentation on complex partner settlement processes in a SaaS product.</p>
@@ -58,19 +65,16 @@
 
   <section id="experience">
     <h2>Experience</h2>
-
     <div class="card">
       <h3>Senior Technical Writer – Subex</h3>
       <p><strong>Mar 2021 – Present</strong><br>
       Led Help Center revamp for telecom products. Owned Git+RoboHelp pipelines and introduced AI documentation flows in the HyperSense suite.</p>
     </div>
-
     <div class="card">
       <h3>Lead Technical Writer – ZKTeco Biometrics India Pvt. Ltd.</h3>
       <p><strong>Jun 2015 – Feb 2021</strong><br>
       Managed end-to-end hardware/software docs, implemented localization workflows, and streamlined team collaboration using Confluence and SnagIT.</p>
     </div>
-
     <div class="card">
       <h3>Technical Author – CADES STUDEC Technology India</h3>
       <p><strong>Oct 2011 – Jun 2015</strong><br>
@@ -80,7 +84,6 @@
 
   <section id="publications">
     <h2>Publications</h2>
-
     <ul>
       <li><a href="https://yourblog.com/article1" target="_blank">Semantic Search in Technical Documentation – A Case Study</a></li>
       <li><a href="https://yourblog.com/article2" target="_blank">RoboHelp to Git: Moving Towards Docs-as-Code</a></li>
