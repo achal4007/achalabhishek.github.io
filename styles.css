@@ -110,3 +110,11 @@ h1, h2 {
     padding: 1.5rem;
   }
 }
+ul {
+  padding-left: 20px;       /* Ensures bullets are indented correctly */
+  list-style-position: outside; /* Keeps bullets outside the content block */
+}
+
+li {
+  margin-bottom: 5px;       /* Adds spacing between list items */
+}
