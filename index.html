@@ -2,29 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Achal Abhishek | Senior Technical Writer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Achal Abhishek - Technical Writer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <nav class="sidebar">
-  <div class="profile">
-    <img src="profile.jpg" alt="Achal Abhishek" class="profile-img">
-    <h1>Achal Abhishek</h1>
-    <p class="role">Senior Technical Writer</p>
-  </div>
-  <ul class="sidebar-menu">
-    <li><a href="#about" class="active">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <aside class="sidebar">
+      <img src="your-photo.jpg" alt="Achal Abhishek" class="profile-img"/>
+      <h2>Achal Abhishek</h2>
+      <p>Senior Technical Writer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
 
-
-    <main class="content">
+    <main>
       <section id="about">
         <h1>Hi, I'm Achal Abhishek</h1>
         <p>Senior Technical Writer with 12+ years of experience in telecom, SaaS, and AI documentation. I create clear, user-friendly content that empowers users and improves product adoption.</p>
@@ -42,43 +39,26 @@
 
       <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="card">
           <h3>Help Center Revamp – Subex</h3>
           <p>Led the revamp of telecom product help guides using RoboHelp and Git, reducing support tickets by 30%.</p>
         </div>
-        <div class="project">
+        <div class="card">
           <h3>Hypersense AI Documentation</h3>
           <p>Created end-to-end user guides for AI modules, improving onboarding efficiency across teams.</p>
         </div>
-        <div class="project">
+        <div class="card">
           <h3>Partner Settlement Docs</h3>
           <p>Developed clear documentation on complex partner settlement processes in a SaaS product.</p>
         </div>
       </section>
 
       <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:achal.abhishek4007@gmail.com">achal.abhishek4007@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/achalabhishek" target="_blank">linkedin.com/in/achalabhishek</a></p>
+        <h2>Contact</h2>
+        <p>Email: achal@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/achalabhishek" target="_blank">View Profile</a></p>
       </section>
     </main>
   </div>
-
-  <script>
-    // Smooth scroll for nav links
-    document.querySelectorAll('.sidebar-menu a').forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-
-        // Remove active from all links
-        document.querySelectorAll('.sidebar-menu a').forEach(el => el.classList.remove('active'));
-        // Add active to clicked
-        link.classList.add('active');
-
-        const target = document.querySelector(link.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
 </body>
 </html>
