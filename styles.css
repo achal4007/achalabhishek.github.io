@@ -102,6 +102,24 @@ li {
     margin: 0 10px;
   }
 }
-ul {
-  margin: 5px
+#experience .card, #publications ul {
+  margin-top: 1rem;
+}
+
+#publications ul {
+  padding-left: 1.25rem;
+}
+
+#publications li {
+  margin-bottom: 0.75rem;
+}
+
+#publications a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#publications a:hover {
+  text-decoration: underline;
 }
