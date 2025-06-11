@@ -162,6 +162,20 @@ footer {
     display: none;
   }
 }
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid var(--clr-accent);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
 
 /* Animations */
 @keyframes fadeIn {
