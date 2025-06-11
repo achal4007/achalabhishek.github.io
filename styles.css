@@ -4,6 +4,17 @@
   --clr-primary: #1f2937;
   --clr-secondary: #4b5563;
   --clr-white: #fff;
+  --clr-accent: #2563eb;
+}
+
+body.dark {
+  --clr-bg: #111827;
+  --clr-primary: #f3f4f6;
+  --clr-secondary: #9ca3af;
+  --clr-white: #1f2937;
+  --clr-accent: #3b82f6;
+  background: var(--clr-bg);
+  color: var(--clr-primary);
 }
 
 *, *::before, *::after {
@@ -16,6 +27,7 @@ body {
   background: var(--clr-bg);
   color: var(--clr-primary);
   line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 
 /* Header & Nav */
@@ -25,6 +37,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: background 0.3s;
 }
 nav {
   max-width: 900px;
@@ -47,9 +60,23 @@ nav {
   text-decoration: none;
   color: var(--clr-secondary);
   font-weight: 600;
+  transition: color 0.2s;
 }
 .nav-links a:hover {
-  color: var(--clr-primary);
+  color: var(--clr-accent);
+}
+
+/* Theme toggle */
+.toggle-theme {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: var(--clr-secondary);
+  transition: color 0.2s;
+}
+.toggle-theme:hover {
+  color: var(--clr-accent);
 }
 
 /* Hero */
@@ -57,6 +84,7 @@ nav {
   max-width: 900px;
   margin: 3rem auto;
   padding: 0 1rem;
+  animation: fadeIn 1s ease;
 }
 #hero h1 {
   font-size: 2.5rem;
@@ -72,6 +100,7 @@ section {
   max-width: 900px;
   margin: 2rem auto;
   padding: 0 1rem;
+  animation: fadeIn 1s ease;
 }
 section h2 {
   border-bottom: 2px solid var(--clr-primary);
@@ -93,7 +122,7 @@ li {
   margin-bottom: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s;
 }
 .card:hover {
   transform: translateY(-4px);
@@ -108,7 +137,7 @@ li {
   margin-bottom: 0.75rem;
 }
 #publications a {
-  color: #2563eb;
+  color: var(--clr-accent);
   text-decoration: none;
   font-weight: 500;
 }
@@ -121,6 +150,7 @@ footer {
   text-align: center;
   padding: 1.5rem;
   color: var(--clr-secondary);
+  transition: color 0.3s;
 }
 
 /* Responsive */
@@ -131,4 +161,10 @@ footer {
   .nav-links {
     display: none;
   }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
