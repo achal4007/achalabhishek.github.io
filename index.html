@@ -6,79 +6,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Achal Abhishek | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
-  <nav>
-    <h1>Achal Abhishek</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <span class="toggle-mode" onclick="document.body.classList.toggle('dark-mode')">🌓</span>
-  </nav>
+  <header class="hero">
+    <div class="container">
+      <img src="profile.jpg" alt="Achal Abhishek" class="profile-pic">
+      <h1>Achal Abhishek</h1>
+      <p>Technical Writing Manager with over 12 years of experience creating clear, user-focused documentation for SaaS, AI, and telecom products.</p>
+      <nav>
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><span class="toggle-mode" onclick="document.body.classList.toggle('dark-mode')">🌓</span></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <section id="hero">
-    <img src="profile.jpg" alt="Achal Abhishek" class="profile-pic">
-    <h1>Hi, I’m Achal Abhishek</h1>
-    <p>Technical Writing Manager with over 12 years of experience creating clear, user-focused documentation and content strategies for SaaS, AI, and telecom products. I specialize in transforming complex technical information into accessible, engaging content that empowers users and drives product success.</p>
-  </section>
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I specialize in transforming complex technical information into accessible, engaging content that empowers users and drives product success. With hands-on experience in Adobe RoboHelp, FrameMaker, Git, Confluence, and Google Analytics, I thrive in Agile environments and deliver impactful documentation through collaboration.</p>
+        <ul>
+          <li>Understanding user needs through feedback and analytics</li>
+          <li>Clear, concise, and actionable content</li>
+          <li>Collaboration with product, engineering, and support teams</li>
+          <li>Docs-as-Code practices for quality and agility</li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I have hands-on experience with tools like Adobe RoboHelp, FrameMaker, Git, Confluence, and Google Analytics. I thrive in Agile environments and enjoy collaborating across teams to deliver impactful documentation.</p>
-    <p>I believe great documentation is more than words on a page — it’s a critical part of the user experience that can delight or frustrate users. My approach focuses on:</p>
-    <ul class="skill-list">
-      <li>Understanding user needs through feedback and analytics</li>
-      <li>Clear, concise, and actionable content</li>
-      <li>Collaboration with product, engineering, and support teams</li>
-      <li>Leveraging modern tools and Docs-as-Code practices to ensure quality and agility</li>
-    </ul>
-  </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skill-list">
-      <li>Adobe RoboHelp, FrameMaker, Snagit</li>
-      <li>Git, Markdown, HTML &amp; CSS</li>
-      <li>API Documentation, SaaS Docs</li>
-      <li>Technical Content Strategy</li>
-    </ul>
-  </section>
-  <section id="projects">
-    <h2>Portfolio / Work Samples</h2>
-    <div class="project-item">
-      <h3>Help Center Revamp – Subex Telecom Product</h3>
-      <p><strong>Role:</strong> Technical Writing Manager</p>
-      <p><strong>Challenge:</strong> Outdated help documentation slowing support and onboarding.</p>
-      <p><strong>Solution:</strong> Led the transition from static PDFs to online Help Center using Adobe RoboHelp integrated with Git. Added analytics and customer feedback loop to continuously improve content.</p>
-      <p><strong>Impact:</strong> Reduced support queries by 30%, increased update speed by 40%.</p>
-      <p><strong>Tools:</strong> Adobe RoboHelp, Git, Google Analytics, Jira</p>
-    </div>
-    <div class="project-item">
-      <h3>Documentation for Hypersense AI Platform Modules (DMS, BMS)</h3>
-      <p><strong>Role:</strong> Lead Technical Writer</p>
-      <p><strong>Challenge:</strong> Documenting complex AI-based modules for internal and customer use.</p>
-      <p><strong>Solution:</strong> Created end-to-end user guides and API references in collaboration with product and engineering teams.</p>
-      <p><strong>Impact:</strong> Enabled faster product adoption and better internal training.</p>
-      <p><strong>Tools:</strong> Adobe FrameMaker, RoboHelp, Confluence</p>
-    </div>
-    <div class="project-item">
-      <h3>API Documentation and SaaS Product Guides</h3>
-      <p>Created detailed API docs and user manuals focusing on clarity and ease of use to reduce developer onboarding time and customer support load.</p>
-    </div>
-  </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>I’m always open to discussing new opportunities or collaborations.</p>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="#">Your LinkedIn Profile URL</a></p>
-  </section>
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li>Adobe RoboHelp, FrameMaker, Snagit</li>
+          <li>Git, Markdown, HTML & CSS</li>
+          <li>API Documentation, SaaS Docs</li>
+          <li>Technical Content Strategy</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Project Highlights</h2>
+
+        <article class="card">
+          <h3>Help Center Revamp – Subex Telecom Product</h3>
+          <p><strong>Role:</strong> Technical Writing Manager</p>
+          <p><strong>Impact:</strong> Reduced support queries by 30%, increased update speed by 40%</p>
+          <p><strong>Tools:</strong> RoboHelp, Git, Google Analytics, Jira</p>
+        </article>
+
+        <article class="card">
+          <h3>Hypersense AI Modules Documentation</h3>
+          <p><strong>Role:</strong> Lead Technical Writer</p>
+          <p><strong>Impact:</strong> Enabled faster adoption through complete user guides and API docs</p>
+          <p><strong>Tools:</strong> FrameMaker, RoboHelp, Confluence</p>
+        </article>
+
+        <article class="card">
+          <h3>API & SaaS Documentation</h3>
+          <p>Created detailed API and user guides to simplify developer onboarding and improve self-service.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>I'm open to collaborations and new opportunities. Let's connect!</p>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    &copy; 2025 Achal Abhishek. All rights reserved.
+    <div class="container">
+      <p>&copy; 2025 Achal Abhishek. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 
