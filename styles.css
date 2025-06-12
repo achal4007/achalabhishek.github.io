@@ -28,6 +28,7 @@ body.dark-mode {
   display: flex;
   width: 100%;
   min-height: 100vh;
+  position: relative;
 }
 
 .sidebar {
@@ -41,6 +42,7 @@ body.dark-mode {
   position: sticky;
   top: 0;
   height: 100vh;
+  z-index: 1;
 }
 
 body.dark-mode .sidebar {
@@ -98,12 +100,16 @@ body.dark-mode .nav a {
   color: var(--accent);
 }
 
+/* Toggle moved to top-right of content */
 .toggle-mode {
-  margin-top: auto;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--text);
   transition: color 0.3s;
+  z-index: 2;
 }
 
 body.dark-mode .toggle-mode {
@@ -114,6 +120,7 @@ body.dark-mode .toggle-mode {
   flex: 1;
   overflow-y: auto;
   padding: 2rem;
+  position: relative;
 }
 
 .section {
@@ -193,7 +200,10 @@ body.dark-mode footer {
   }
 
   .toggle-mode {
-    margin: 1rem auto 0;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
   }
 
   .content {
